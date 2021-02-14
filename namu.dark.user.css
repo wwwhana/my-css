@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           namu wiki Dark Theme fix
 @namespace      github.com/wwwhana/my-css
-@version        1.0.8
+@version        1.0.9
 @description    나무위키의 다크모드의 색상이 지정되지 않은 표를 수정하는 css
 @author         leXia.Lim
 ==/UserStyle== */
@@ -71,6 +71,16 @@
         background-color: #191919;
     }
 
+    .theseed-dark-mode tr[style*="background-color:#fff;"]:not([data-dark-style]),
+    .theseed-dark-mode tr[style*="background-color:#fff;"]:not([data-dark-style]) td:not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode .wiki-table[style*="background-color:#fff;"]:not([data-dark-style]),
+    .theseed-dark-mode .wiki-table[style*="background-color:#fff;"]:not([data-dark-style]) tr:not([data-dark-style]) td:not([style*="background-color:#fffsmoke;"]):not([style*="background-color:gainsboro;"]):not([style*="background-color:lightgray;"]):not([style*="background-color:darkgray;"]):not([style*="background-color:gold;"]):not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode td[style*="background-color:#fff;"]:not([data-dark-style]),
+    .theseed-dark-mode tr[style*="background-color:#ffffff;"]:not([data-dark-style]),
+    .theseed-dark-mode tr[style*="background-color:#ffffff;"]:not([data-dark-style]) td:not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode .wiki-table[style*="background-color:#ffffff;"]:not([data-dark-style]),
+    .theseed-dark-mode .wiki-table[style*="background-color:#ffffff;"]:not([data-dark-style]) tr:not([data-dark-style]) td:not([style*="background-color:#ffffffsmoke;"]):not([style*="background-color:gainsboro;"]):not([style*="background-color:lightgray;"]):not([style*="background-color:darkgray;"]):not([style*="background-color:gold;"]):not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode td[style*="background-color:#ffffff;"]:not([data-dark-style]),
     .theseed-dark-mode tr[style*="background-color:white;"]:not([data-dark-style]),
     .theseed-dark-mode tr[style*="background-color:white;"]:not([data-dark-style]) td:not([data-dark-style]) .wiki-paragraph,
     .theseed-dark-mode .wiki-table[style*="background-color:white;"]:not([data-dark-style]),
