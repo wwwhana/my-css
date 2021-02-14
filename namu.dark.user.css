@@ -54,7 +54,10 @@
         color: #ddd !important;
     }
 
-    /* WIP Firefox 85.0.2, Stylus 1.5.15 Not Working Before Force edit from Developer Tools */
+    /* 
+        WIP Firefox 85.0.2, Stylus 1.5.15 Not Working Before Force edit from Developer Tools 
+        Sample: 뮤직뱅크 역대 여성 MC
+    */
     .theseed-dark-mode .wiki-table[style="background-color:#191919;"]:not([data-dark-style]) tr:not([style*="color"]) td:not([style*="color"]) .wiki-color[style*="color:#000000;"],
     .theseed-dark-mode .wiki-table[style="background-color:black;"]:not([data-dark-style]) tr:not([style*="color"]) td:not([style*="color"]) .wiki-color[style*="color:#000000;"] ,
     .theseed-dark-mode .wiki-table[data-dark-style="background-color:#191919;"] tr:not([style*="color"]) td:not([style*="color"]).wiki-color[style*="color:#000000;"],
