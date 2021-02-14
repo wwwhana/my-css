@@ -45,7 +45,7 @@
     }
 
     .theseed-dark-mode .w .wiki-table[data-dark-style="background-color:#1f2023;"],
-    .theseed-dark-mode .wiki-table[data-dark-style*="background-color:#191919;"] .wiki-paragraph {
+    .theseed-dark-mode .wiki-table[data-dark-style*="background-color:#191919;"] tr:not([style*="color"]) td:not([style*="color"]) {
         color: #ddd !important;
     }
 
