@@ -32,7 +32,8 @@
     .theseed-dark-mode [style*="background-color:#B2EBF4;"],
     .theseed-dark-mode [style*="background-color:#F2CB61;"],
     .theseed-dark-mode [style*="background-color:#B5B2FF;"],
-    .theseed-dark-mode [style*="background-color:#00E0E0;"] {
+    .theseed-dark-mode [style*="background-color:#00E0E0;"],
+    .theseed-dark-mode .w td[style*="background-color:#CEECF5;"] {
         color: #191919 !important;
     }
 
