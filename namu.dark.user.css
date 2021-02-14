@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           namu wiki Dark Theme fix
 @namespace      github.com/wwwhana/my-css
-@version        1.0.6
+@version        1.0.7
 @description    나무위키의 다크모드의 색상이 지정되지 않은 표를 수정하는 css
 @author         leXia.Lim
 ==/UserStyle== */
@@ -15,7 +15,8 @@
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color:#dcdcdc;"]:not([data-dark-style]),
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr[style*="background-color"]:not([data-dark-style]) td:not([data-dark-style]):not([style*="background-color"]),
     .theseed-dark-mode .w .wiki-table[style*="background-color:#FFF;"]:not([data-dark-style]),
-    .theseed-dark-mode .w .wiki-table td[style*="background-color:#FFF;"]:not([data-dark-style]) strong {
+    .theseed-dark-mode .w .wiki-table td[style*="background-color:#FFF;"]:not([data-dark-style]) strong,
+    .theseed-dark-mode [style*="background-color:#fdf00d;"]:not([data-dark-style]) {
         color: #191919;
     }
 
@@ -34,7 +35,10 @@
     .theseed-dark-mode [style*="background-color:#B5B2FF;"],
     .theseed-dark-mode [style*="background-color:#00E0E0;"],
     .theseed-dark-mode .w td[style*="background-color:#CEECF5;"],
-    .theseed-dark-mode .w td[style*="background-color:#dddddd;"] {
+    .theseed-dark-mode .w td[style*="background-color:#dddddd;"],
+    .theseed-dark-mode td[style*="background-color:gainsboro;"]:not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode td[style*="background-color:lightgray;"]:not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode td[style*="background-color:darkgray;"]:not([data-dark-style]) .wiki-paragraph{
         color: #191919 !important;
     }
 
@@ -83,12 +87,6 @@
     .theseed-dark-mode .start > div[style],
     .theseed-dark-mode .start.show.finished > div[style] {
         margin: unset !important;
-    }
-
-    .theseed-dark-mode td[style*="background-color:gainsboro;"]:not([data-dark-style]) .wiki-paragraph,
-    .theseed-dark-mode td[style*="background-color:lightgray;"]:not([data-dark-style]) .wiki-paragraph,
-    .theseed-dark-mode td[style*="background-color:darkgray;"]:not([data-dark-style]) .wiki-paragraph{
-        color: #191919 !important;
     }
 
     .theseed-dark-mode [style*="background-color:#fff; border:2px solid #dddddd;"],
