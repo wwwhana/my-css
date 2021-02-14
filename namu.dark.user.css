@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           namu wiki Dark Theme fix
 @namespace      github.com/wwwhana/my-css
-@version        1.0.7
+@version        1.0.8
 @description    나무위키의 다크모드의 색상이 지정되지 않은 표를 수정하는 css
 @author         leXia.Lim
 ==/UserStyle== */
@@ -52,6 +52,14 @@
     .theseed-dark-mode .w .wiki-table[data-dark-style="background-color:#1f2023;"],
     .theseed-dark-mode .wiki-table[data-dark-style*="background-color:#191919;"] tr:not([style*="color"]) td:not([style*="color"]) {
         color: #ddd !important;
+    }
+
+    /* WIP Firefox 85.0.2, Stylus 1.5.15 Not Working Before Force edit from Developer Tools */
+    .theseed-dark-mode .wiki-table[style="background-color:#191919;"]:not([data-dark-style]) tr:not([style*="color"]) td:not([style*="color"]) .wiki-color[style*="color:#000000;"],
+    .theseed-dark-mode .wiki-table[style="background-color:black;"]:not([data-dark-style]) tr:not([style*="color"]) td:not([style*="color"]) .wiki-color[style*="color:#000000;"] ,
+    .theseed-dark-mode .wiki-table[data-dark-style="background-color:#191919;"] tr:not([style*="color"]) td:not([style*="color"]).wiki-color[style*="color:#000000;"],
+    .theseed-dark-mode .wiki-table[data-dark-style="background-color:black;"] tr:not([style*="color"]) td:not([style*="color"]) .wiki-color[style*="color:#000000;"] {
+        color: unset !important;
     }
 
     .theseed-dark-mode .w .wiki-table,
