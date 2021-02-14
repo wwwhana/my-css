@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           namu wiki Dark Theme fix
 @namespace      github.com/wwwhana/my-css
-@version        1.0.5
+@version        1.0.6
 @description    나무위키의 다크모드의 색상이 지정되지 않은 표를 수정하는 css
 @author         leXia.Lim
 ==/UserStyle== */
 @-moz-document url-prefix("https://namu.wiki/w/") {
-    .theseed-dark-mode .w .wiki-table[style*="background-color"]:not([data-dark-style]):not([data-dark-style*="background-color:black;"]) tr:not([data-dark-style]) td:not([data-dark-style]):not([data-dark-style*="background-color:black;"]),
+    .theseed-dark-mode .w .wiki-table[style*="background-color"]:not([style*="background-color:black;"]):not([data-dark-style]):not([data-dark-style*="background-color:black;"]) tr:not([data-dark-style]):not([data-dark-style*="background-color:black;"]) td:not([data-dark-style]):not([data-dark-style*="background-color:black;"]),
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr[style*="background-color"]:not([data-dark-style]) td:not([data-dark-style]),
     .theseed-dark-mode .w .wiki-table td[style*="background-color:#FFF;"]:not([data-dark-style]) strong,
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color"]:not([data-dark-style]):not([style*="background-color:black;"]):not([style*="background-color:white;"]),
