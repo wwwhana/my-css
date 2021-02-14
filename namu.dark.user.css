@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           namu wiki Dark Theme fix
 @namespace      github.com/wwwhana/my-css
-@version        1.0.1
+@version        1.0.2
 @description    나무위키의 다크모드의 색상이 지정되지 않은 표를 수정하는 css
 @author         leXia.Lim
 ==/UserStyle== */
@@ -33,7 +33,8 @@
     .theseed-dark-mode [style*="background-color:#F2CB61;"],
     .theseed-dark-mode [style*="background-color:#B5B2FF;"],
     .theseed-dark-mode [style*="background-color:#00E0E0;"],
-    .theseed-dark-mode .w td[style*="background-color:#CEECF5;"] {
+    .theseed-dark-mode .w td[style*="background-color:#CEECF5;"],
+    .theseed-dark-mode .w td[style*="background-color:#dddddd;"] {
         color: #191919 !important;
     }
 
