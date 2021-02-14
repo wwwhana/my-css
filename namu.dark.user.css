@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           namu wiki Dark Theme fix
 @namespace      github.com/wwwhana/my-css
-@version        1.0.4
+@version        1.0.5
 @description    나무위키의 다크모드의 색상이 지정되지 않은 표를 수정하는 css
 @author         leXia.Lim
 ==/UserStyle== */
@@ -9,13 +9,13 @@
     .theseed-dark-mode .w .wiki-table[style*="background-color"]:not([data-dark-style]):not([data-dark-style*="background-color:black;"]) tr:not([data-dark-style]) td:not([data-dark-style]):not([data-dark-style*="background-color:black;"]),
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr[style*="background-color"]:not([data-dark-style]) td:not([data-dark-style]),
     .theseed-dark-mode .w .wiki-table td[style*="background-color:#FFF;"]:not([data-dark-style]) strong,
-    .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color"]:not([data-dark-style]),
+    .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color"]:not([data-dark-style]):not([style*="background-color:black;"]):not([style*="background-color:white;"]),
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color:#d9e5ff;"]:not([data-dark-style]),
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color:#d3d3d3;"]:not([data-dark-style]),
     .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr:not([style*="background-color"]) td[style*="background-color:#dcdcdc;"]:not([data-dark-style]),
-    .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr[style*="background-color"]:not([data-dark-style]) td:not([data-dark-style]),
+    .theseed-dark-mode .w .wiki-table:not([style*="background-color"]) tr[style*="background-color"]:not([data-dark-style]) td:not([data-dark-style]):not([style*="background-color"]),
     .theseed-dark-mode .w .wiki-table[style*="background-color:#FFF;"]:not([data-dark-style]),
-    .theseed-dark-mode .w .wiki-table td[style*="background-color:#FFF;"]:not([data-dark-style]) strong { 
+    .theseed-dark-mode .w .wiki-table td[style*="background-color:#FFF;"]:not([data-dark-style]) strong {
         color: #191919;
     }
 
@@ -59,10 +59,10 @@
     .theseed-dark-mode tr[style*="background-color:white;"]:not([data-dark-style]),
     .theseed-dark-mode tr[style*="background-color:white;"]:not([data-dark-style]) td:not([data-dark-style]) .wiki-paragraph,
     .theseed-dark-mode .wiki-table[style*="background-color:white;"]:not([data-dark-style]),
-    .theseed-dark-mode .wiki-table[style*="background-color:white;"]:not([data-dark-style]) tr:not([data-dark-style]) td:not([style*="background-color:whitesmoke;"]):not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode .wiki-table[style*="background-color:white;"]:not([data-dark-style]) tr:not([data-dark-style]) td:not([style*="background-color:whitesmoke;"]):not([style*="background-color:gainsboro;"]):not([style*="background-color:lightgray;"]):not([style*="background-color:darkgray;"]):not([style*="background-color:gold;"]):not([data-dark-style]) .wiki-paragraph,
     .theseed-dark-mode td[style*="background-color:white;"]:not([data-dark-style]) {
         background-color: unset !important;
-        color: #ddd !important;
+        color: #ddd;
     }
 
     .theseed-dark-mode td[style*="background-color:#9370db;"][style*="color:#fff;"][data-dark-style*="background-color:#010101;"][data-dark-style*="color:#1f2023;"] {
@@ -80,17 +80,23 @@
         color: #ddd !important;
     }
 
-    .start > div[style],
-    .start.show.finished > div[style] {
+    .theseed-dark-mode .start > div[style],
+    .theseed-dark-mode .start.show.finished > div[style] {
         margin: unset !important;
     }
 
-    [style*="background-color:#fff; border:2px solid #dddddd;"],
-    [style*="background-color:#fff; border:2px solid #ddd;"],
-    [style*="background-color:#white; border:2px solid #dddddd;"],
-    [style*="background-color:#white; border:2px solid #ddd;"],
-    [style*="background-color:#ffffff; border:2px solid #dddddd;"],
-    [style*="background-color:#ffffff; border:2px solid #ddd;"] {
+    .theseed-dark-mode td[style*="background-color:gainsboro;"]:not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode td[style*="background-color:lightgray;"]:not([data-dark-style]) .wiki-paragraph,
+    .theseed-dark-mode td[style*="background-color:darkgray;"]:not([data-dark-style]) .wiki-paragraph{
+        color: #191919 !important;
+    }
+
+    .theseed-dark-mode [style*="background-color:#fff; border:2px solid #dddddd;"],
+    .theseed-dark-mode [style*="background-color:#fff; border:2px solid #ddd;"],
+    .theseed-dark-mode [style*="background-color:#white; border:2px solid #dddddd;"],
+    .theseed-dark-mode [style*="background-color:#white; border:2px solid #ddd;"],
+    .theseed-dark-mode [style*="background-color:#ffffff; border:2px solid #dddddd;"],
+    .theseed-dark-mode [style*="background-color:#ffffff; border:2px solid #ddd;"] {
         border-color: #191919 !important;
     }
 }
